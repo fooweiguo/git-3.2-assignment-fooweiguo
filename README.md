@@ -71,4 +71,28 @@ Delete the file from project and stage the removal for commit.
 # What are the 4 GitHub commands that you think you will use the most in the
 # real project.
 
+ I think that I will use the following commands the most in the real projects:
+	
+	1. git checkout -b branch_name
+	2. git add .
+	3. git commit -m "message_block"
+	4. git push --set-upstream origin branch_name 
 
+Explanation: In the DevOps role, there will be many branches created from the
+main branch. This is to allow different developers to work on various parts of
+the same project, some of them with overlapping parts. without affecting the
+main branch. Otherwise if all the developers work on the same main branch at the
+same time, there will be a lot of conflicting versions of the software in the
+repository, making debugging and roll-back of the codes almost impossible to
+carry out if anything goes wrong. Thus the git checkout command allows
+developers to create a sub-branch away from the main branch so that they can
+implement new features and perform debugging. Once these are done, they will
+perform git add to save the changes to the staging area of the sub-branch. Then
+they can do a git commit to add a message to inform the approver of the changes
+made. Finally the git push command will push the directory from the staging area
+to the sub-branch in the remote repository. The approver will then be notified
+of the pull requests from the sub-branch, and he/ she will decide whether to
+allow or reject merging changes from the sub-branch to the main branch. This
+controlled way of making changes to the main branch will be very useful,
+especially when doing capstone projects, since we will be working with a team of
+several members, each working on different things. 
